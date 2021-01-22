@@ -1,0 +1,17 @@
+def fibonacci(n):
+    full_seq = []
+    a=0
+    b=1
+    c=0
+
+    for i in range(n):
+        full_seq.append(c)
+        c = a + b
+        a = b
+        b = c
+
+    return full_seq[-1]
+    # Write your code here.
+
+n = int(input())
+print(fibonacci(n))
